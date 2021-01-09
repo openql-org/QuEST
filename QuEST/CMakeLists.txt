@@ -292,9 +292,10 @@ elseif (WIN32)
         ${QuEST_SRC}
     )
 else ()
-    add_library(QuEST SHARED
+    add_library(QuEST STATIC
         ${QuEST_SRC}
     )
+    set_property(TARGET QuEST PROPERTY POSITION_INDEPENDENT_CODE ON)
 endif()
 
 # ----- Location of header files ----------------------------------------------
