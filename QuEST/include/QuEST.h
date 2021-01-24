@@ -675,6 +675,7 @@ int getNumQubits(Qureg qureg);
  */
 long long int getNumAmps(Qureg qureg);
 
+void initZeroStateOfSingleQubit(Qureg qureg, int qubitId);
 /** Initialises a qureg to have all-zero-amplitudes. This is an unphysical state 
  * useful for iteratively building a state with e.g. \p setWeightedQureg,
  * and should not be confused with the zero state |0...0>
